@@ -19,7 +19,7 @@ ssl_protocols TLSv1.2 TLSv1.3;
 ### Site Configs
 Redirecting HTTP to HTTPS
 ```nginx
-# /etc/nginx/sites-enabled/example.com.conf
+# /etc/nginx/sites-enabled/example.com
 
 server {
     listen 80;
@@ -38,7 +38,7 @@ server {
 
 Redirecting www
 ```nginx
-# /etc/nginx/sites-enabled/www.example.com.conf
+# /etc/nginx/sites-enabled/www.example.com
 
 server {
     listen 443 ssl;
@@ -51,7 +51,7 @@ server {
 
 Reverse proxy
 ```nginx
-# /etc/nginx/sites-enabled/example.com.conf
+# /etc/nginx/sites-enabled/example.com
 
 server {
     listen 443 ssl;
